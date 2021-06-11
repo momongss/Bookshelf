@@ -84,6 +84,7 @@ export default class Page extends Component {
             />
           </div>
         </div>
+        <div className="page-number">- {this.props.page} -</div>
       </div>
     );
   }

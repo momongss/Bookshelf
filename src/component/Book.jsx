@@ -7,7 +7,9 @@ export default class Book extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      page: 0,
+    };
 
     this.$book = createRef();
   }
@@ -16,8 +18,8 @@ export default class Book extends Component {
     return (
       <div className="book-wrapper" ref={this.$book}>
         <div className="pages">
-          <Page type="main"></Page>
-          <Page type="normal"></Page>
+          <Page type="main" page={this.state.page}></Page>
+          <Page type="normal" page={this.state.page + 1}></Page>
         </div>
       </div>
     );

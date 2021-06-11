@@ -5,9 +5,14 @@
 
 .page-wrapper {
   display: flex;
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
+
+  background-color: rgb(238, 220, 186);
+  border: 10px solid rgb(236, 212, 167);
+  border-radius: 20px;
 
   --cover-width: 500px;
   --cover-height: 600px;
@@ -20,7 +25,6 @@
   flex-direction: column;
 
   align-items: center;
-  background-color: rgb(238, 220, 186);
 
   box-sizing: border-box;
 
@@ -28,9 +32,6 @@
   height: var(--cover-height);
 
   padding: 10px 15px;
-
-  border: 10px solid rgb(236, 212, 167);
-  border-radius: 20px;
 }
 
 .page-header {
@@ -88,6 +89,10 @@
 
 .page-content > * {
   padding-top: 5px;
+}
+
+.page-number {
+  font-size: 15px;
 }
 
 [contenteditable] {
